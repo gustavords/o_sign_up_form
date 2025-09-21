@@ -141,7 +141,23 @@ body {
                     border-radius: .2rem;
                     height: 1.8rem;
                     border: 1px #E5E7EB solid;
+                }
 
+                input:focus {
+                    border: 1px blue solid;
+                    box-shadow: 0px 0px 3px 2px gray;
+                }
+
+                input:invalid {
+                    border: 1px red solid;
+                }
+
+                input:valid {
+                    border: 1px green solid;
+                }
+
+                input[type="password"]:required {
+                    border: 1px red solid;
                 }
 
                 label {
@@ -174,7 +190,7 @@ body {
             box-shadow: 0px 3px 7px #b9b3b3;
         }
 
-        .create_acc_btn:hover{
+        .create_acc_btn:hover {
             color: #596D48;
             background-color: #E5E7EB;
             box-shadow: 0px 0px 5px 3px #acacac;
@@ -182,6 +198,9 @@ body {
 
         p {
             font-size: medium;
+            font-weight: 500;
+            color: #595758;
+
             a {
                 color: #596D48;
                 font-weight: 600;
