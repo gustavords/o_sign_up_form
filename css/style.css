@@ -59,9 +59,11 @@ body {
 
     .credit {
         font-size: small;
+
         a {
             color: white;
         }
+
         a:hover {
             color: blueviolet;
         }
@@ -76,11 +78,16 @@ body {
     .blurb,
     .form_section,
     .bottom {
-        /* width: 99%; */
-        border: 1px solid black;
-        flex: 1 1 33%;
+        /* border: 1px solid black; */
         margin: 0%;
-        padding: 3rem 1rem;
+        padding: 0rem 2rem;
+    }
+
+    .blurb,
+    .bottom {
+        flex: 3;
+
+        background-color: #F9FAFB;
     }
 
     .blurb {
@@ -89,43 +96,104 @@ body {
         justify-content: end;
 
         p {
-            border: 1px solid red;
+            /* border: 1px solid red; */
+            font-size: large;
+            font-weight: 700;
+            margin: 0%;
+            margin-right: 7rem;
         }
 
-        padding-bottom: .5rem;
+        padding-bottom: 1rem;
     }
 
     .form_section {
+        flex: 1;
+        padding: 1rem 2rem 2rem 2rem;
+        box-shadow: 6px 3px 6px 0px #d6d6d6;
+        z-index: 1;
+
+        legend {
+            font-size: large;
+            font-weight: 500;
+            margin-bottom: .5rem;
+        }
+
         fieldset {
+            all: unset;
             display: flex;
             flex-wrap: wrap;
-            border: 1px solid red;
             gap: 1rem;
+            justify-content: flex-start;
+            padding: 0%;
+            margin: 0%;
 
             div {
-                border: 1px solid purple;
                 flex: 0 1 200px;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
+                /* gap: 1rem; */
 
                 input {
                     margin: 0%;
                     padding: 0%;
                     box-sizing: border-box;
+                    border-radius: .2rem;
+                    height: 1.8rem;
+                    border: 1px #E5E7EB solid;
+
+                }
+
+                label {
+                    margin-top: .5rem;
+                    padding: 0%;
+                    font-size: x-small;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    color: #595758;
                 }
             }
         }
     }
 
     .bottom {
+        padding-top: 1rem;
+
         .create_acc_btn {
             all: unset;
-            border: 1px solid red;
+            /* border: 0px solid #596D48; */
             border-radius: .4rem;
-            height: 2rem;
-            width: 14rem;
+            height: 2.5rem;
+            width: 12rem;
             text-align: center;
+            background-color: #596D48;
+            color: white;
+            font-size: small;
+            letter-spacing: 1px;
+            font-weight: 600;
+            box-shadow: 0px 3px 7px #b9b3b3;
         }
+
+        .create_acc_btn:hover{
+            color: #596D48;
+            background-color: #E5E7EB;
+            box-shadow: 0px 0px 5px 3px #acacac;
+        }
+
+        p {
+            font-size: medium;
+            a {
+                color: #596D48;
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: blueviolet;
+                font-weight: 600;
+            }
+        }
+
+
     }
 }
