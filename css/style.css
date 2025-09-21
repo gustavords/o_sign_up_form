@@ -4,7 +4,6 @@ body {
     height: 100vh;
     margin: 0%;
     padding: 0%;
-
 }
 
 .banner {
@@ -29,7 +28,6 @@ body {
     }
 }
 
-
 .content {
     flex: 2;
     display: flex;
@@ -46,10 +44,9 @@ body {
     }
 
     .blurb {
-
         display: flex;
         flex-direction: column;
-        justify-content: end;  
+        justify-content: end;
 
         p {
             border: 1px solid red;
@@ -59,11 +56,30 @@ body {
     }
 
     .form_section {
-        
+        fieldset {
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid red;
+            gap: 1rem;
+
+            div {
+                border: 1px solid purple;
+                flex: 0 1 200px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+                input {
+                    margin: 0%;
+                    padding: 0%;
+                    box-sizing: border-box;
+                }
+            }
+        }
     }
 
     .bottom {
-        .create_acc_btn{
+        .create_acc_btn {
             all: unset;
             border: 1px solid red;
             border-radius: .4rem;
@@ -72,5 +88,4 @@ body {
             text-align: center;
         }
     }
-
 }

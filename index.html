@@ -22,10 +22,43 @@
             </p>
         </div>
         <div class="form_section">
-            <form action=""></form>
+            <form action="" method="">
+                <fieldset>
+                    <div>
+                        <label for="f_name">FIRST NAME</label>
+                        <input type="text" id="f_name" name="f_name">
+                    </div>
+                    <div>
+                        <label for="l_name">LAST NAME</label>
+                        <input type="text" id="l_name" name="l_name">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="number" name="number" id="number">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div>
+                        <label for="c_password">CONFIRM PASSWORD</label>
+                        <input type="password" name="c_password" id="c_password">
+                    </div>
+                </fieldset>
+            </form>
         </div>
         <div class="bottom">
-            <button class="create_acc_btn">Create Account</button>
+            <button type="submit" class="create_acc_btn">Create Account</button>
             <p>Already have an account> <a href="http://" target="_blank" rel="noopener noreferrer">Log in</a></p>
         </div>
     </div>
